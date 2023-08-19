@@ -1,4 +1,5 @@
 from typing import List
+import math
 
 class DistortionAdjustedCoordinateTransform:
   def __init__(self, distortionLinePoints: List[List[float]], distortionCenter: List[float], seenReferencePoints: List[List[float]], targetReferencePoints: List[List[float]]):
