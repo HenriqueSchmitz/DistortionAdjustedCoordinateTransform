@@ -14,6 +14,10 @@ class DistortionAdjustedCoordinateTransform:
   def shiftPerspectiveForPoint(self, point: List[float]) -> List[float]:
     undistortedPoint = self.correctDistortionForPoint(point)
     return self.__transformPointPerspectiveOnly(undistortedPoint)
+  
+  def roundedShiftPerspectiveForPoint(self, point: List[float]) -> List[int]:
+    shiftedFloatPoint = self.shiftPerspectiveForPoint(point)
+    return [round(coordinate) for coordinate in shiftedFloatPoint]
 
   def correctDistortionForPoint(self, distortedPoint: List[float]) -> List[float]:
     rSq = self.__rSquared(distortedPoint)
