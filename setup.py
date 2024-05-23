@@ -6,6 +6,6 @@ setup(
     author="Henrique Schmitz",
     packages=find_packages(),
     py_modules=['DistortionAdjustedCoordinateTransform'],
-    install_requires=["typing", "torch", "math"],
-    setup_requires=["typing", "torch", "math"],
+    install_requires=["typing", "torch"],
+    setup_requires=["typing", "torch"],
 )
