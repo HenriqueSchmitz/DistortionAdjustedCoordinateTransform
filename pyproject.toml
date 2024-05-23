@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DistortionAdjustedCoordinateTransform"
+version = "1.0.0"
+authors = [
+  { name="Henrique Schmitz", email="sch.henrique@gmail.com" },
+]
+description = "Optimized code to correlate coordinate points in distorted images to undistorted views in different perspectives.. "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
