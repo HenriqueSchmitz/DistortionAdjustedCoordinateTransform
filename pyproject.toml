@@ -16,6 +16,5 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "typing",
-    "torch"
+    "torch>=2.3.0"
 ]
